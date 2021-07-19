@@ -59,6 +59,9 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+
+Closure is when a nested function pulls values for variable/arguments from their parent/grandparent/greatgrandparents.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -80,8 +83,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+On line 72, in the console.log it calls for the name which is the parameter for the parent function.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+The name is always the same, however the dice roll changes unless it happens to be the same number as before.
+
 c. What is the lexical scope of `newRoll`? 
+
+newroll would have the same lexical scope as it's own declaration, but is the child of the return statement and the function itself.
 
 
 ### Task 3 - Stretch Goals

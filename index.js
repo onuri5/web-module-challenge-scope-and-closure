@@ -151,11 +151,14 @@ Use the scoreboard function below to do the following:
 ]  
   */
 
-function scoreboard(/* CODE HERE */) {
-  /* CODE HERE */
+function scoreboard(getInningScoreCb, inningCb, numOfInnings) {
+  const finalArr = [];
+
+  for (let i = 0; i < numOfInnings; i++) {
+    finalArr.push(getInningScore())
+  }
+  return finalArr;
 }
-
-
 
 
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
